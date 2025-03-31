@@ -15,6 +15,7 @@ export default function App() {
           path="/todos"
           element={isAuthenticated ? <TodosPage /> : <Navigate to="/login" />}
         />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
   );

@@ -38,7 +38,7 @@ const LoginPage = () => {
           Login
         </button>
       </form>
-    </LoginContainer>
+    </LoginContainer> 
   );
 };
 
