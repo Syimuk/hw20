@@ -15,8 +15,9 @@ const LoginPage = () => {
     e.preventDefault();
     dispatch(login({ email, password }));
   };
-
-  if (isAuthenticated) navigate("/todos");
+  const LoginPage = () => {
+    if (isAuthenticated) navigate("/todos");
+  };
 
   return (
     <LoginContainer>
@@ -33,7 +34,7 @@ const LoginPage = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" onClick={() => navigate('/todo')}>
+        <button type="submit" onClick={LoginPage}>
           Login
         </button>
       </form>
